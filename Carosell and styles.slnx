@@ -1,0 +1,5 @@
+<Solution>
+  <Project Path="Carosell and styles/Carosell and styles.csproj">
+    <Deploy Solution="Debug|*" />
+  </Project>
+</Solution>

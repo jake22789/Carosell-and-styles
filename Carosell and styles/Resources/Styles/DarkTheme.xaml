@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<ResourceDictionary
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    x:Class="Carosell_and_styles.Resources.Styles.DarkTheme">
+
+    <Color x:Key="ThemeBackground">#121212</Color>
+    <Color x:Key="ThemeSurface">#242424</Color>
+    <Color x:Key="ThemeText">#FFFFFF</Color>
+    <Color x:Key="ThemeSecondaryText">#BBBBBB</Color>
+    <Color x:Key="ThemePrimary">#BB86FC</Color>
+    <Color x:Key="ThemeButtonText">#171717</Color>
+    <Color x:Key="ThemeBorder">#444444</Color>
+
+</ResourceDictionary>
