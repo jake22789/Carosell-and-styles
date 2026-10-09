@@ -95,10 +95,11 @@
                                 SemanticProperties.Description="Clean tasks" />
                         </Grid>
 
+
                         <CarouselView
-                             Grid.Row="5"
-                             ItemsSource="{Binding Tasks}"
-                             HeightRequest="300">
+                            Grid.Row="5"
+                            ItemsSource="{Binding Tasks}"
+                            HeightRequest="300">
 
                             <CarouselView.ItemTemplate>
                                 <DataTemplate x:DataType="models:ProjectTask">
@@ -108,14 +109,34 @@
                                         CornerRadius="15"
                                         BackgroundColor="{DynamicResource ThemeSurface}">
 
-                                        <VerticalStackLayout>
+                                        <VerticalStackLayout
+                                            Spacing="12"
+                                            VerticalOptions="Center">
+
                                             <Label
                                                 Text="{Binding Title}"
                                                 FontSize="24"
                                                 HorizontalOptions="Center"
                                                 TextColor="{DynamicResource ThemeText}" />
-                                        </VerticalStackLayout>
 
+                                            <HorizontalStackLayout
+                                                HorizontalOptions="Center"
+                                                Spacing="8">
+
+                                                <CheckBox
+                                                    IsChecked="{Binding IsCompleted, Mode=TwoWay}"
+                                                    SemanticProperties.Description="Completed"
+                                                    SemanticProperties.Hint="Indicates if this task is completed" />
+
+                                                <Label
+                                                    Text="Completed"
+                                                    FontSize="16"
+                                                    TextColor="{DynamicResource ThemeText}"
+                                                    IsVisible="{Binding IsCompleted}" />
+
+                                            </HorizontalStackLayout>
+
+                                        </VerticalStackLayout>
                                     </Frame>
                                 </DataTemplate>
                             </CarouselView.ItemTemplate>
