@@ -95,31 +95,7 @@
                                 SemanticProperties.Description="Clean tasks" />
                         </Grid>
 
-                        <CarouselView
-                             Grid.Row="5"
-                             ItemsSource="{Binding Tasks}"
-                             HeightRequest="300">
-
-                            <CarouselView.ItemTemplate>
-                                <DataTemplate x:DataType="models:ProjectTask">
-                                    <Frame
-                                        Margin="10"
-                                        Padding="20"
-                                        CornerRadius="15"
-                                        BackgroundColor="{DynamicResource ThemeSurface}">
-
-                                        <VerticalStackLayout>
-                                            <Label
-                                                Text="{Binding Title}"
-                                                FontSize="24"
-                                                HorizontalOptions="Center"
-                                                TextColor="{DynamicResource ThemeText}" />
-                                        </VerticalStackLayout>
-
-                                    </Frame>
-                                </DataTemplate>
-                            </CarouselView.ItemTemplate>
-                        </CarouselView>
+                        <!-- implement task carosell -->
                     </Grid>
                 </ScrollView>
             </pullToRefresh:SfPullToRefresh.PullableContent>
